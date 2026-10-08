@@ -32,6 +32,10 @@ st.markdown(
     f"""
     <style>
         .stApp {{ background: {FOND}; }}
+
+        /* On masque la barre du haut, le menu et le pied de page de Streamlit */
+        header[data-testid="stHeader"], [data-testid="stToolbar"],
+        [data-testid="stDecoration"], #MainMenu, footer {{ display: none; }}
         .block-container {{ padding-top: 1.2rem; padding-bottom: 1rem; max-width: 1000px; }}
         h1, h2, h3, label, p {{ color: {SAUGE_FONCE}; }}
 
