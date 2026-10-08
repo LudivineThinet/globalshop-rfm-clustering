@@ -1,0 +1,12 @@
+@"
+# Datasets (trop lourds, a telecharger separement)
+data/*.xlsx
+data/*.csv
+data/*.parquet
+data/*.pkl
+
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.env
+"@ | Set-Content -Encoding ascii .gitignore
